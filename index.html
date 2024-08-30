@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CM of Tamil Nadu</title>
+</head>
+<body>
+	<h2>Who is the CM of Tamil Nadu?</h2>
+	<form>
+		<label>
+			<input type="radio" name="cm" value="A">A) Kalaingar
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="cm" value="B">B) Stalin
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="cm" value="C">C) Jaya
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="cm" value="D">D) Modi
+		</label>
+		<br>
+		<button onclick="checkAnswer()">Check Answer</button>
+		<p id="result"></p>
+	</form>
+
+	<script>
+		function checkAnswer() {
+			var selectedValue = document.querySelector('input[name="cm"]:checked').value;
+			if (selectedValue === "B") {
+				document.getElementById("result").innerHTML = "Correct! Stalin is the CM of Tamil Nadu.";
+			} else {
+				document.getElementById("result").innerHTML = "Incorrect. Stalin is the CM of Tamil Nadu.";
+			}
+		}
+	</script>
+
+<input type=button value='Next'>
+  
+</body>
+</html>
